@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>PT-03 — Contenido y requisitos metodológicos de la DAP</title>
+<style>
+  body{font-family:'Segoe UI',Arial,sans-serif;background:#f7f9fb;color:#1f2933;margin:0;padding:32px}
+  h1{font-size:22px;font-weight:600;margin:0 0 4px}
+  h2{font-size:15px;font-weight:600;color:#52606d;margin:28px 0 10px;text-transform:uppercase;letter-spacing:.06em}
+  .sub{font-size:13px;color:#7b8794;margin-bottom:24px}
+  .lane{display:grid;grid-template-columns:190px 1fr;gap:0;border:1px solid #d9e2ec;border-radius:8px;overflow:hidden;margin-bottom:14px;background:#fff}
+  .lane-body{padding:14px;display:flex;flex-wrap:wrap;gap:10px}
+  .step{border-radius:4px;padding:8px 10px;font-size:12.5px;max-width:250px;line-height:1.35;border-left:3px solid}
+  .step b{display:block;font-size:11px;margin-bottom:3px}
+  .src{display:block;font-size:10.5px;color:#3e4c59;margin-top:6px;font-style:italic;padding:4px 7px;border-radius:3px;border-left:3px solid}
+  /* carril = bloque temático, en variantes de azul */
+  .b1 .lane-label{background:#0b3d6b;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .b1 .step{background:#e8f1f9;border-left-color:#0b3d6b}
+  .b1 .step b{color:#0b3d6b}
+  .b2 .lane-label{background:#1a6fa8;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .b2 .step{background:#e6f2fa;border-left-color:#1a6fa8}
+  .b2 .step b{color:#1a6fa8}
+  .b3 .lane-label{background:#4a90c2;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .b3 .step{background:#eaf3f9;border-left-color:#4a90c2}
+  .b3 .step b{color:#3a7ba8}
+  .b4 .lane-label{background:#7fb2d4;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .b4 .step{background:#eef6fb;border-left-color:#7fb2d4}
+  .b4 .step b{color:#3f7fa6}
+  .b5 .lane-label{background:#a8cbe0;color:#1f2933;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .b5 .step{background:#f2f8fc;border-left-color:#a8cbe0}
+  .b5 .step b{color:#3f7fa6}
+  /* etiqueta de fuente = documento, fondo claro del color de la leyenda */
+  .src.snca{background:#e3f0f9;border-left-color:#2680c2}
+  .src.iso{background:#e6f4ea;border-left-color:#2f9e44}
+  .src.pt{background:#efe9fb;border-left-color:#7048e8}
+  .src.rcp{background:#fdf1e3;border-left-color:#f08c00}
+  .dec{background:#fff4e6;border:1px solid #f08c00;border-radius:4px;padding:8px 10px;font-size:12.5px;max-width:250px}
+  .dec b{color:#b35c00;font-size:11px;display:block;margin-bottom:3px}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;margin-top:8px}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .dot{width:12px;height:12px;border-radius:3px;display:inline-block}
+  .note{background:#e3fafc;border-left:4px solid #1098ad;padding:12px 14px;border-radius:4px;font-size:12.5px;line-height:1.5;margin-top:8px}
+  .note b{color:#0b7285}
+</style>
+</head>
+<body>
+
+<h1>PT-03 — Contenido y requisitos metodológicos de la DAP</h1>
+<div class="sub">Programa DAP El Salvador · Etiqueta Ambiental Tipo III · Versión 0.1</div>
+
+<h2>Secuencia general</h2>
+<div class="note">
+  <b>Alcance y RCP</b> → <b>Modelado del ACV</b> → <b>Indicadores</b> → <b>Redacción de la DAP</b> → <b>Verificación</b> → <b>Publicación</b><br>
+  El procedimiento fija qué debe declarar el titular y qué debe verificar el OVV [PT-03 2].
+</div>
+
+<h2>Bloques de requisitos</h2>
+
+<div class="lane b1">
+  <div class="lane-label">Alcance y<br>tipo de DAP</div>
+  <div class="lane-body">
+    <div class="step"><b>1</b>Identificar la RCP aplicable y su versión vigente<span class="src rcp">RCP de la categoría</span><span class="src iso">ISO/TS 14027</span><span class="src snca">SNCA XIII</span><span class="src snca">SNCA Anexo II III.B</span><span class="src pt">PT-03 3</span></div>
+    <div class="step"><b>2</b>Determinar el tipo de DAP: producto único, múltiples productos, sectorial, comerciante, producto no disponible, producto reciente o huella única<span class="src pt">PT-03 4</span></div>
+    <div class="step"><b>3</b>Declarar el método de agregación cuando la DAP agrupe varios productos<span class="src pt">PT-03 4.2</span></div>
+    <div class="step"><b>4</b>Declarar la cobertura del ciclo de vida: cuna a puerta, cuna a puerta con opciones, cuna a tumba o puerta a tumba<span class="src snca">SNCA Anexo II III.A</span><span class="src pt">PT-03 6</span></div>
+    <div class="step"><b>5</b>Justificar las etapas no consideradas y verificar consistencia con la RCP<span class="src pt">PT-03 6</span></div>
+  </div>
+</div>
+
+<div class="lane b2">
+  <div class="lane-label">Reglas de<br>modelado</div>
+  <div class="lane-body">
+    <div class="step"><b>6</b>Aplicar la regla de corte: 95% de masa y energía por módulo, y todo flujo con más del 5% en cualquier indicador<span class="src pt">PT-03 8.1</span></div>
+    <div class="step"><b>7</b>Usar datos primarios en procesos bajo control operativo; secundarios representativos en su defecto; proxy solo si no hay otros y sin superar el 10% de ningún indicador<span class="src pt">PT-03 8.2</span></div>
+    <div class="step"><b>8</b>Evaluar la calidad de datos: cobertura, precisión, integridad, representatividad, coherencia, reproducibilidad, fuentes e incertidumbre<span class="src iso">ISO 14044 4.5</span><span class="src pt">PT-03 8.2</span></div>
+    <div class="step"><b>9</b>Aplicar la jerarquía de asignación: subdivisión, relación física, valor económico; residuos bajo quien contamina paga; declarar el método aplicado y su justificación<span class="src iso">ISO 14044 4.3.4</span><span class="src pt">PT-03 8.3</span></div>
+    <div class="step"><b>10</b>Modelar la electricidad según la jerarquía: instrumento contractual, mix residual, mix de consumo<span class="src pt">PT-03 8.4</span></div>
+    <div class="step"><b>11</b>Modelar el biogás según su origen y uso: dedicado, red con fines energéticos, red como materia prima<span class="src pt">PT-03 8.5</span></div>
+    <div class="step"><b>12</b>Calcular el módulo D solo si la RCP lo permite, declarando flujos netos, cargas evitadas, cargas de procesamiento y factor de ajuste de calidad<span class="src pt">PT-03 8.6</span></div>
+  </div>
+</div>
+
+<div class="lane b3">
+  <div class="lane-label">Indicadores de<br>impacto</div>
+  <div class="lane-body">
+    <div class="step"><b>13</b>Declarar cambio climático total con subindicadores fósil, biogénico y LULUC<span class="src snca">SNCA XI</span><span class="src pt">PT-03 7</span></div>
+    <div class="step"><b>14</b>Declarar ODP, acidificación, eutrofización de agua dulce, marina y terrestre, y POCP<span class="src snca">SNCA XI</span><span class="src pt">PT-03 7</span></div>
+    <div class="step"><b>15</b>Declarar uso de recursos energéticos renovables y no renovables, y uso neto de agua dulce<span class="src snca">SNCA XI</span><span class="src pt">PT-03 7</span></div>
+    <div class="step"><b>16</b>Incorporar los indicadores adicionales que exija la RCP y declarar los factores de caracterización con su versión<span class="src rcp">RCP de la categoría</span><span class="src pt">PT-03 7</span></div>
+    <div class="step"><b>17</b>Presentar los resultados por unidad declarada y por etapa del ciclo de vida<span class="src pt">PT-03 5.7</span></div>
+  </div>
+</div>
+
+<div class="lane b4">
+  <div class="lane-label">Contenido y<br>redacción</div>
+  <div class="lane-body">
+    <div class="step"><b>18</b>Redactar los once elementos de contenido obligatorio, de portada a referencias<span class="src snca">SNCA XIII</span><span class="src snca">SNCA Anexo II III.B</span><span class="src iso">ISO 14025 7</span><span class="src pt">PT-03 5</span></div>
+    <div class="step"><b>19</b>Describir el ACV: unidad declarada, límites, diagrama de flujo, software, fuentes, años de referencia y porcentaje de datos primarios<span class="src pt">PT-03 5.6</span></div>
+    <div class="step"><b>20</b>Declarar el contenido de materiales y sustancias, incluida la información sobre sustancias que puedan afectar la salud o el medio ambiente<span class="src iso">ISO 14025 6.7.2</span><span class="src pt">PT-03 5.5</span></div>
+    <div class="step"><b>21</b>Declarar por separado los resultados del módulo D respecto de los módulos A a C<span class="src pt">PT-03 8.6</span></div>
+    <div class="step"><b>22</b>Verificar las cinco condiciones de comparabilidad antes de incluir cualquier afirmación comparativa<span class="src pt">PT-03 9</span></div>
+    <div class="step"><b>23</b>Publicar en español e incluir esa versión cuando se publique en otro idioma<span class="src pt">PT-03 10</span></div>
+  </div>
+</div>
+
+<div class="lane b5">
+  <div class="lane-label">Verificación y<br>registros</div>
+  <div class="lane-body">
+    <div class="step"><b>24</b>Solicitar la verificación al OVV con la DAP en borrador y el informe de ACV<span class="src pt">PT-04 6.1</span></div>
+    <div class="step"><b>25</b>Facilitar el acceso a datos, modelo de cálculo y evidencia de calidad de datos durante la verificación<span class="src pt">PT-04 6.5</span></div>
+    <div class="step"><b>26</b>Solicitar la publicación de la DAP verificada al MARN para su incorporación al registro nacional<span class="src snca">SNCA XIII</span><span class="src snca">SNCA Anexo II III.B</span><span class="src pt">PT-03 10</span></div>
+    <div class="step"><b>27</b>Conservar informe de ACV, modelo, fuentes y evidencia de calidad durante la vigencia y cinco años posteriores<span class="src pt">PT-03 11</span></div>
+  </div>
+</div>
+
+<h2>Puntos de decisión</h2>
+<div class="lane">
+  <div class="lane-label" style="background:#243b53;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center">Decisiones</div>
+  <div class="lane-body">
+    <div class="dec"><b>D1</b>¿Existe RCP vigente para la categoría?<br><small>Sí → modelado · No → PT-02</small></div>
+    <div class="dec"><b>D2</b>¿La DAP agrupa varios productos?<br><small>Sí → declarar método de agregación · No → producto único</small></div>
+    <div class="dec"><b>D3</b>¿Hay datos primarios disponibles para el proceso?<br><small>Sí → usarlos · No → secundarios representativos · Si tampoco → proxy bajo el límite del 10%</small></div>
+    <div class="dec"><b>D4</b>¿La RCP permite el módulo D?<br><small>Sí → declarar por separado · No → excluirlo</small></div>
+    <div class="dec"><b>D5</b>¿La DAP incluye afirmaciones comparativas?<br><small>Sí → cumplir las cinco condiciones del 9 · No → sin declaración comparativa</small></div>
+  </div>
+</div>
+
+<h2>Leyenda de fuentes</h2>
+<div class="legend">
+  <span><i class="dot" style="background:#2680c2"></i>SNCA (incl. XI, XIII y Anexo II III.A / III.B)</span>
+  <span><i class="dot" style="background:#2f9e44"></i>ISO 14025, 14040, 14044 e ISO/TS 14027</span>
+  <span><i class="dot" style="background:#7048e8"></i>Procedimientos PT-03 y PT-04</span>
+  <span><i class="dot" style="background:#f08c00"></i>RCP de la categoría</span>
+</div>
+
+</body>
+</html>

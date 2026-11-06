@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>PT-04 — Verificación y otorgamiento de la Etiqueta Ambiental Tipo III</title>
+<style>
+  body{font-family:'Segoe UI',Arial,sans-serif;background:#f7f9fb;color:#1f2933;margin:0;padding:32px}
+  h1{font-size:22px;font-weight:600;margin:0 0 4px}
+  h2{font-size:15px;font-weight:600;color:#52606d;margin:28px 0 10px;text-transform:uppercase;letter-spacing:.06em}
+  .sub{font-size:13px;color:#7b8794;margin-bottom:24px}
+  .lane{display:grid;grid-template-columns:190px 1fr;gap:0;border:1px solid #d9e2ec;border-radius:8px;overflow:hidden;margin-bottom:14px;background:#fff}
+  .lane-body{padding:14px;display:flex;flex-wrap:wrap;gap:10px}
+  .step{border-radius:4px;padding:8px 10px;font-size:12.5px;max-width:250px;line-height:1.35;border-left:3px solid}
+  .step b{display:block;font-size:11px;margin-bottom:3px}
+  .src{display:block;font-size:10.5px;color:#3e4c59;margin-top:6px;font-style:italic;padding:4px 7px;border-radius:3px;border-left:3px solid}
+  /* carril = actor, en variantes de azul */
+  .tit .lane-label{background:#4a90c2;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .tit .step{background:#eaf3f9;border-left-color:#4a90c2}
+  .tit .step b{color:#3a7ba8}
+  .ov .lane-label{background:#1a6fa8;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .ov .step{background:#e6f2fa;border-left-color:#1a6fa8}
+  .ov .step b{color:#1a6fa8}
+  .marn .lane-label{background:#0b3d6b;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .marn .step{background:#e8f1f9;border-left-color:#0b3d6b}
+  .marn .step b{color:#0b3d6b}
+  /* etiqueta de fuente = documento, fondo claro del color de la leyenda */
+  .src.snca{background:#e3f0f9;border-left-color:#2680c2}
+  .src.ley{background:#e6f4ea;border-left-color:#2f9e44}
+  .src.pt{background:#efe9fb;border-left-color:#7048e8}
+  .src.iso{background:#fdf1e3;border-left-color:#f08c00}
+  .dec{background:#fff4e6;border:1px solid #f08c00;border-radius:4px;padding:8px 10px;font-size:12.5px;max-width:250px}
+  .dec b{color:#b35c00;font-size:11px;display:block;margin-bottom:3px}
+  .legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;margin-top:8px}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .dot{width:12px;height:12px;border-radius:3px;display:inline-block}
+  .note{background:#e3fafc;border-left:4px solid #1098ad;padding:12px 14px;border-radius:4px;font-size:12.5px;line-height:1.5;margin-top:8px}
+  .note b{color:#0b7285}
+</style>
+</head>
+<body>
+
+<h1>PT-04 — Verificación y otorgamiento de la Etiqueta Ambiental Tipo III</h1>
+<div class="sub">Programa DAP El Salvador · Etiqueta Ambiental Tipo III · Versión 0.1</div>
+
+<h2>Secuencia general</h2>
+<div class="note">
+  <b>Solicitud al OV</b> → <b>Revisión y factibilidad</b> → <b>Selección y plan</b> → <b>Determinación</b> → <b>Informe y opinión</b> → <b>Declaración de verificación</b> → <b>Solicitud al MARN</b> → <b>Licencia y registro</b><br>
+  Las etapas 6.1 a 6.8 corresponden al proceso del <b>SNCA Anexo II I</b>; el PT-04 precisa únicamente el contenido de cada etapa y no reproduce el proceso del Anexo II, que se aplica en su texto original [PT-04 1 y 6].
+</div>
+
+<h2>Requisitos previos del OV</h2>
+<div class="note">
+  <b>Autorización vigente</b> del MARN con categorías y RCP habilitadas [PT-04 5.1 · SNCA Anexo II I].<br>
+  <b>Competencia del equipo</b> en ACV (ISO 14040/14044), sector, RCP y procedimientos del programa [PT-04 5.2].<br>
+  <b>Independencia</b>: sin consultoría al titular en los 2 años anteriores [PT-04 5.3].<br>
+  <b>Registro de verificadores</b> con evidencia de competencia y ausencia de conflictos [PT-04 5.4].<br>
+  <b>Hito de acreditación</b>: mientras el OSA no acredite al primer OVV bajo ISO/IEC 17029 e ISO 14065, opera la carta compromiso; al comunicarse la primera acreditación, el MARN revisa el procedimiento y fija período de transición [PT-04 5.5 · SNCA Anexo II I.C].
+</div>
+
+<h2>Definiciones específicas</h2>
+<div class="note">
+  <b>Declaración errónea material</b>: la que individual o acumulativamente podría influir en las decisiones de un usuario de la DAP [PT-04 4.1].<br>
+  <b>Umbral de materialidad</b>: variación &gt; 5 % en cualquier indicador obligatorio, o cualquier variación en unidad declarada, límites del sistema o RCP [PT-04 4.2].<br>
+  <b>Verificación de seguimiento</b>: durante la vigencia de la DAP, para confirmar el mantenimiento de las condiciones de otorgamiento [PT-04 4.3].<br>
+  <b>Opinión de verificación</b>: sin reservas, con reservas o no favorable [PT-04 4.4].
+</div>
+
+<h2>Carriles de responsabilidad</h2>
+
+<div class="lane tit">
+  <div class="lane-label">Titular de<br>la DAP</div>
+  <div class="lane-body">
+    <div class="step"><b>1</b>Solicitar la verificación al OVV con DAP en borrador, informe de ACV, RCP aplicable y declaración de cumplimiento de requisitos mínimos<span class="src pt">PT-04 6.1</span><span class="src snca">SNCA Anexo II I (preacuerdo)</span><span class="src snca">SNCA XV</span><span class="src iso">ISO/IEC 17029 9.2.2</span><span class="src iso">ISO 14065 9.2</span></div>
+    <div class="step"><b>2</b>Proporcionar la información necesaria para la determinación de factibilidad<span class="src pt">PT-04 6.3.1</span><span class="src snca">SNCA Anexo II I (factibilidad)</span></div>
+    <div class="step"><b>3</b>Autorizar y facilitar el acceso a instalaciones, datos, modelo de cálculo y proveedores vinculados<span class="src pt">PT-04 6.5.1</span><span class="src snca">SNCA Anexo II I (desarrollo de la verificación)</span></div>
+    <div class="step"><b>4</b>Recibir el informe de verificación y presentar plan de acción frente a no conformidades<span class="src pt">PT-04 6.6</span><span class="src snca">SNCA Anexo II I (informe y superación)</span></div>
+    <div class="step"><b>5</b>Recibir la opinión de verificación (sin reservas, con reservas o no favorable) y, si aplica, cerrar no conformidades en el plazo indicado<span class="src pt">PT-04 6.8</span><span class="src snca">SNCA Anexo II I (toma de decisión)</span></div>
+    <div class="step"><b>6</b>Suscribir el acuerdo de servicio de verificación y recibir la declaración de verificación<span class="src pt">PT-04 7.1</span><span class="src snca">SNCA Anexo II I (entrega de la certificación)</span></div>
+    <div class="step"><b>7</b>Informar al MARN de la aprobación de la DAP, remitiendo la declaración de verificación y el informe del OV<span class="src pt">PT-04 7.2</span><span class="src snca">SNCA Anexo II I</span></div>
+    <div class="step"><b>8</b>Solicitar al MARN el derecho de uso de la Etiqueta Tipo III<span class="src pt">PT-04 7.3</span><span class="src snca">SNCA Anexo II I.8</span></div>
+    <div class="step"><b>9</b>Informar al OVV cualquier cambio en producto, proceso, sistema de gestión, composición, diseño o materiales<span class="src pt">PT-04 8.2</span><span class="src snca">SNCA Anexo II III</span></div>
+    <div class="step"><b>10</b>Comunicar al OVV la renovación con al menos 3 meses de anticipación al vencimiento<span class="src pt">PT-04 8.3</span><span class="src snca">SNCA Anexo II II</span></div>
+    <div class="step"><b>11</b>Notificar por escrito al OVV y al MARN la decisión de no renovar y cesar el uso del Sello<span class="src pt">PT-04 8.4</span><span class="src snca">SNCA Anexo II II</span></div>
+  </div>
+</div>
+
+<div class="lane ov">
+  <div class="lane-label">Organismo de<br>Verificación</div>
+  <div class="lane-body">
+    <div class="step"><b>12</b>Verificar que la RCP invocada esté vigente y que el producto corresponda a la categoría cubierta<span class="src pt">PT-04 6.1.2</span><span class="src snca">SNCA Anexo II I (preacuerdo)</span><span class="src snca">SNCA Anexo II III.A</span></div>
+    <div class="step"><b>13</b>Si no existe RCP aprobada, no iniciar la verificación e informar al solicitante que debe presentar propuesta de RCP conforme al Anexo 1 del PT-02<span class="src pt">PT-04 6.1.3</span><span class="src snca">SNCA Anexo II I (preacuerdo)</span></div>
+    <div class="step"><b>14</b>Revisar completitud documental (informe de ACV, DAP borrador, evidencia de datos, cumplimiento de requisitos mínimos) y comunicar omisiones con plazo<span class="src pt">PT-04 6.2</span><span class="src snca">SNCA Anexo II I (revisión de la solicitud)</span><span class="src snca">SNCA XV</span></div>
+    <div class="step"><b>15</b>Evaluar y documentar la factibilidad (alcance, objetivos, recursos, acceso, duración) y comunicar aceptación o rechazo<span class="src pt">PT-04 6.3</span><span class="src snca">SNCA Anexo II I (factibilidad)</span></div>
+    <div class="step"><b>16</b>Seleccionar criterios de verificación (RCP, ISO 14040/14044, SNCA, PT-03) y definir el plan de verificación; remitirlo al titular antes de su ejecución<span class="src pt">PT-04 6.4</span><span class="src snca">SNCA Anexo II I (selección)</span></div>
+    <div class="step"><b>17</b>Ejecutar el plan: revisión documental, entrevistas, muestreos y visitas a instalaciones del titular y proveedores<span class="src pt">PT-04 6.5.1</span><span class="src snca">SNCA Anexo II I (desarrollo de la verificación)</span></div>
+    <div class="step"><b>18</b>Evaluar conformidad con RCP, ISO 14040, SNCA, calidad de datos, veracidad y exactitud del ACV e información ambiental declarada<span class="src pt">PT-04 6.5.2</span><span class="src snca">SNCA Anexo II I (desarrollo de la verificación)</span></div>
+    <div class="step"><b>19</b>Evaluar la materialidad de las no conformidades conforme al umbral del 5 %<span class="src pt">PT-04 6.5.3</span><span class="src snca">SNCA Anexo II I (determinación)</span></div>
+    <div class="step"><b>20</b>Emitir el informe de verificación (revisión crítica, opinión y demás aspectos) y entregarlo al titular<span class="src pt">PT-04 6.6</span><span class="src snca">SNCA Anexo II I (informe)</span></div>
+    <div class="step"><b>21</b>Emitir la opinión de verificación conforme a ISO/IEC 17029 9.7 e ISO 14065 9.7; si es con reservas, indicar no conformidades no materiales y plazo; si es no favorable, indicar razones y plazo mínimo para nueva solicitud<span class="src pt">PT-04 6.8</span><span class="src snca">SNCA Anexo II I (toma de decisión)</span><span class="src iso">ISO/IEC 17029 9.7</span><span class="src iso">ISO 14065 9.7</span></div>
+    <div class="step"><b>22</b>Emitir la declaración de verificación que aprueba la DAP y suscribir con el titular el acuerdo de servicio<span class="src pt">PT-04 7.1</span><span class="src snca">SNCA Anexo II I (entrega de la certificación)</span></div>
+    <div class="step"><b>23</b>Comunicar al MARN la aprobación de la DAP<span class="src pt">PT-04 7.2</span><span class="src snca">SNCA Anexo II I</span></div>
+    <div class="step"><b>24</b>Ejecutar verificaciones de seguimiento durante la vigencia de la DAP y notificar al MARN el resultado<span class="src pt">PT-04 8.5</span><span class="src pt">PT-05 8.1</span><span class="src snca">SNCA Anexo II II</span></div>
+    <div class="step"><b>25</b>Evaluar los cambios notificados por el titular y determinar si exigen nueva evaluación, modificación o cese de la publicación<span class="src pt">PT-04 8.2</span><span class="src snca">SNCA Anexo II III</span></div>
+    <div class="step"><b>26</b>Ejecutar la verificación completa de renovación cuando el titular la solicite<span class="src pt">PT-04 8.3</span><span class="src snca">SNCA Anexo II II</span></div>
+    <div class="step"><b>27</b>Conservar los expedientes de verificación por 5 años desde el vencimiento de la DAP y mantener la confidencialidad de la información sensible<span class="src pt">PT-04 9.1 y 9.2</span></div>
+    <div class="step"><b>28</b>Tramitar apelaciones y quejas conforme a ISO/IEC 17029 9.9 y 9.10, y ponerlas a disposición del MARN<span class="src pt">PT-04 9.3</span><span class="src iso">ISO/IEC 17029 9.9 y 9.10</span></div>
+  </div>
+</div>
+
+<div class="lane marn">
+  <div class="lane-label">MARN<br>Administración</div>
+  <div class="lane-body">
+    <div class="step"><b>29</b>Recibir la comunicación del OVV y la solicitud del titular con declaración de verificación, DAP verificada y documentos del OV<span class="src pt">PT-04 7.2 y 7.3</span><span class="src snca">SNCA Anexo II I</span></div>
+    <div class="step"><b>30</b>Verificar la conformidad documental de la solicitud<span class="src pt">PT-04 7.4</span><span class="src snca">SNCA Anexo II I</span></div>
+    <div class="step"><b>31</b>Registrar internamente a la organización y conceder la licencia de uso<span class="src pt">PT-04 7.4</span><span class="src snca">SNCA Anexo II I (otorgamiento)</span><span class="src snca">SNCA VIII</span></div>
+    <div class="step"><b>32</b>Entregar copia del Manual de Uso del Sello Ambiental Salvadoreño<span class="src pt">PT-04 7.4</span><span class="src snca">SNCA Anexo II IV</span></div>
+    <div class="step"><b>33</b>Incorporar la DAP al registro público y solicitar su publicación al OSN<span class="src pt">PT-04 7.5</span><span class="src snca">SNCA Anexo II I (registro público)</span><span class="src snca">SNCA VIII</span></div>
+    <div class="step"><b>34</b>Recibir quejas sobre el desempeño de un OVV y, en su caso, revisar la vigencia de su autorización<span class="src pt">PT-04 10.2</span><span class="src snca">SNCA Anexo II I</span></div>
+    <div class="step"><b>35</b>Resolver las apelaciones contra decisiones de otorgamiento, suspensión o revocación de la licencia conforme al procedimiento administrativo aplicable<span class="src pt">PT-04 10.1</span><span class="src snca">SNCA XVI</span></div>
+  </div>
+</div>
+
+<h2>Puntos de decisión</h2>
+<div class="lane">
+  <div class="lane-label" style="background:#243b53;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center">Decisiones</div>
+  <div class="lane-body">
+    <div class="dec"><b>D1</b>¿Existe RCP aprobada para la categoría?<br><small>Sí → revisión documental · No → el OVV no inicia y remite al PT-02</small></div>
+    <div class="dec"><b>D2</b>¿La documentación está completa?<br><small>Sí → factibilidad · No → comunicación de omisiones con plazo de subsanación</small></div>
+    <div class="dec"><b>D3</b>¿El servicio es factible?<br><small>Sí → plan de verificación · No → rechazo comunicado al solicitante</small></div>
+    <div class="dec"><b>D4</b>¿Hay no conformidades materiales?<br><small>No → opinión favorable · Sí → con reservas (no materiales) o no favorable (materiales)</small></div>
+    <div class="dec"><b>D5</b>¿Opinión favorable?<br><small>Sí → declaración de verificación → solicitud al MARN · No → plazo mínimo antes de nueva solicitud</small></div>
+  </div>
+</div>
+
+<h2>Leyenda de fuentes</h2>
+<div class="legend">
+  <span><i class="dot" style="background:#2680c2"></i>SNCA VIII, XV, XVI y Anexo II I, II, III.A y IV</span>
+  <span><i class="dot" style="background:#2f9e44"></i>Ley SSC Arts. 14, 15 y 16</span>
+  <span><i class="dot" style="background:#7048e8"></i>Procedimientos PT-02, PT-04 y PT-05</span>
+  <span><i class="dot" style="background:#f08c00"></i>ISO/IEC 17029 e ISO 14065</span>
+</div>
+
+</body>
+</html>
