@@ -13,21 +13,37 @@
   .step{border-radius:4px;padding:8px 10px;font-size:12.5px;max-width:250px;line-height:1.35;border-left:3px solid}
   .step b{display:block;font-size:11px;margin-bottom:3px}
   .src{display:block;font-size:10.5px;color:#3e4c59;margin-top:6px;font-style:italic;padding:4px 7px;border-radius:3px;border-left:3px solid}
-  /* carril = actor, en variantes de azul */
+  /* carril = actor; color fijo por actor en todo el conjunto PT-01 a PT-06 */
   .marn .lane-label{background:#0b3d6b;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
   .marn .step{background:#e8f1f9;border-left-color:#0b3d6b}
   .marn .step b{color:#0b3d6b}
-  .ov .lane-label{background:#1a6fa8;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
-  .ov .step{background:#e6f2fa;border-left-color:#1a6fa8}
-  .ov .step b{color:#1a6fa8}
+  .osn .lane-label{background:#1a6fa8;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .osn .step{background:#e6f2fa;border-left-color:#1a6fa8}
+  .osn .step b{color:#1a6fa8}
+  .ov .lane-label{background:#34506e;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .ov .step{background:#eaeff5;border-left-color:#34506e}
+  .ov .step b{color:#34506e}
   .tit .lane-label{background:#4a90c2;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
   .tit .step{background:#eaf3f9;border-left-color:#4a90c2}
   .tit .step b{color:#3a7ba8}
-  /* etiqueta de fuente = documento, fondo claro del color de la leyenda */
-  .src.snca{background:#e3f0f9;border-left-color:#2680c2}
-  .src.man{background:#e6f4ea;border-left-color:#2f9e44}
-  .src.pt{background:#efe9fb;border-left-color:#7048e8}
-  .src.iso{background:#fdf1e3;border-left-color:#f08c00}
+  .cnc .lane-label{background:#5d7f9e;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .cnc .step{background:#edf2f7;border-left-color:#5d7f9e}
+  .cnc .step b{color:#4b6b89}
+  .ct .lane-label{background:#7fb2d4;color:#1f2933;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .ct .step{background:#eef6fb;border-left-color:#7fb2d4}
+  .ct .step b{color:#3f7fa6}
+  .osa .lane-label{background:#9fb6cc;color:#1f2933;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .osa .step{background:#f1f5f9;border-left-color:#9fb6cc}
+  .osa .step b{color:#4b6b89}
+  .pr .lane-label{background:#b9d6ea;color:#1f2933;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center}
+  .pr .step{background:#f4f9fc;border-left-color:#b9d6ea}
+  .pr .step b{color:#3f7fa6}
+  /* etiquetas de fuente: paleta única del conjunto PT-01 a PT-06 */
+  .src.ley{background:#e6f4ea;border-left-color:#2f9e44}   /* Ley SSC: verde */
+  .src.snca{background:#e3f0f9;border-left-color:#2680c2}  /* SNCA y Anexo II: azul */
+  .src.pt{background:#efe9fb;border-left-color:#7048e8}    /* Procedimientos PT: violeta */
+  .src.iso{background:#fde8ef;border-left-color:#d6336c}   /* Normas ISO/IEC: rosa */
+  .src.otro{background:#eceff1;border-left-color:#78909c}  /* Otros (RCP, Manual de Uso, Decisión del programa): gris */
   .dec{background:#fff4e6;border:1px solid #f08c00;border-radius:4px;padding:8px 10px;font-size:12.5px;max-width:250px}
   .dec b{color:#b35c00;font-size:11px;display:block;margin-bottom:3px}
   .legend{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;margin-top:8px}
@@ -35,6 +51,10 @@
   .dot{width:12px;height:12px;border-radius:3px;display:inline-block}
   .note{background:#e3fafc;border-left:4px solid #1098ad;padding:12px 14px;border-radius:4px;font-size:12.5px;line-height:1.5;margin-top:8px}
   .note b{color:#0b7285}
+  table{border-collapse:collapse;width:100%;font-size:12.5px;background:#fff;border:1px solid #d9e2ec;border-radius:8px;overflow:hidden;margin-bottom:14px}
+  th{background:#0b3d6b;color:#fff;text-align:left;padding:9px 12px;font-weight:600;font-size:12px}
+  td{padding:8px 12px;border-top:1px solid #e4ebf2;vertical-align:top}
+  tr:nth-child(even) td{background:#f7fbfd}
 </style>
 </head>
 <body>
@@ -44,14 +64,16 @@
 
 <h2>Secuencia general</h2>
 <div class="note">
-  <b>Certificación de verificación</b> → <b>Solicitud al MARN</b> → <b>Licencia de uso</b> → <b>Verificación de seguimiento</b> → <b>Renovación, suspensión o revocación</b><br>
-  El derecho de uso se ejerce solo sobre el producto verificado y conforme al Manual de Uso del Sello [PT-05 7.2 y 7.3; SNCA Anexo II IV]. En el caso de la DAP, el Sello siempre debe estar acompañado del documento DAP o de un acceso fácil a este, según el público al que esté dirigido [PT-05 5.3 y 7.3; ISO 14025 8].
+  <b>Opinión de verificación</b> → <b>Solicitud al MARN</b> → <b>Licencia de uso</b>  → <b>Renovación, suspensión o revocación</b><br>
+  El derecho de uso se ejerce solo sobre el producto verificado y conforme al Manual de Uso del Sello [PT-05 7.2 y 7.3; SNCA Anexo II IV]. En el caso de la DAP, el Sello siempre debe estar acompañado del documento DAP o de un acceso fácil a este, según el público al que esté dirigido [PT-05 5.3 y 7.3; ISO 14025 9.2.2].
 </div>
 
 <h2>Definiciones clave</h2>
 <div class="note">
   <b>Licencia de uso de marca</b>: acto administrativo por el cual el MARN concede a una organización el derecho de usar el Sello Ambiental Salvadoreño en su versión Tipo III para un producto o servicio determinado [PT-05 4].<br>
-  <b>Titular de la DAP</b>: organización que solicita y mantiene la declaración, responsable de su contenido y de su vigencia [PT-05 4].
+  <b>Titular de la DAP</b>: organización que solicita y mantiene la declaración, responsable de su contenido y de su vigencia [PT-05 4].<br>
+  <b>Certificación de verificación</b>: documento emitido por el Organismo de Verificación que aprueba la DAP; corresponde a la declaración de verificación de ISO/IEC 17029 y del PT-04 [PT-05 4].<br>
+  <b>Vigencia de la licencia</b>: tres años contados a partir de la fecha de emisión de la licencia [PT-05 7.1; SNCA IX.B].
 </div>
 
 <h2>Carriles de responsabilidad</h2>
@@ -59,44 +81,44 @@
 <div class="lane marn">
   <div class="lane-label">MARN<br>Titular de la marca</div>
   <div class="lane-body">
-    <div class="step"><b>1</b>Recibir la solicitud de derecho de uso con la certificación, la DAP verificada y los documentos del OV<span class="src pt">PT-05 6.2</span><span class="src snca">SNCA Anexo II I</span></div>
-    <div class="step"><b>2</b>Verificar que la documentación esté completa y que el OVV esté autorizado y vigente; devolver sin trámite las solicitudes incompletas<span class="src pt">PT-05 6.3</span></div>
+    <div class="step"><b>1</b>Recibir la solicitud de derecho de uso con la certificación, la DAP verificada y los documentos del OV<span class="src pt">PT-05 6.2</span><span class="src snca">SNCA Anexo II I, paso 8</span></div>
+    <div class="step"><b>2</b>Verificar que la documentación esté completa y que el OV esté autorizado y vigente; devolver sin trámite las solicitudes incompletas<span class="src pt">PT-05 6.3</span></div>
     <div class="step"><b>3</b>Registrar a la organización y asignar número de licencia<span class="src pt">PT-05 6.4</span></div>
-    <div class="step"><b>4</b>Otorgar la licencia y entregar copia del Manual de Uso del Sello Ambiental<span class="src man">Manual de Uso (Acuerdo N.º 339)</span><span class="src snca">SNCA IX</span><span class="src snca">SNCA Anexo II IV</span><span class="src pt">PT-05 6.5</span></div>
+    <div class="step"><b>4</b>Otorgar la licencia y entregar copia del Manual de Uso del Sello Ambiental<span class="src otro">Manual de Uso (Acuerdo N.º 339)</span><span class="src snca">SNCA IX</span><span class="src snca">SNCA Anexo II IV</span><span class="src pt">PT-05 6.5</span></div>
     <div class="step"><b>5</b>Incorporar la licencia al registro público y publicar la DAP en el registro nacional<span class="src snca">SNCA VIII</span><span class="src snca">SNCA IX</span><span class="src pt">PT-05 6.6</span></div>
-    <div class="step"><b>6</b>Decidir sobre la licencia con base en el resultado de las verificaciones de seguimiento<span class="src pt">PT-05 8.2</span></div>
-    <div class="step"><b>7</b>Suspender la licencia y reanudarla por el tiempo restante una vez levantada la causa. Durante la suspensión, el titular debe cesar el uso del Sello en productos y materiales de comunicación<span class="src pt">PT-05 8.4 y 8.5</span></div>
-    <div class="step"><b>8</b>Revocar la licencia con audiencia previa de diez días hábiles y resolución motivada. Cuando el incumplimiento corresponda a una certificación de un tercero, la medida se limita a los efectos dentro del SNCA<span class="src snca">SNCA XVI</span><span class="src snca">SNCA Anexo II IV</span><span class="src pt">PT-05 12.2 y 12.5</span></div>
-    <div class="step"><b>9</b>Publicar la revocación en el sitio web oficial y, cuando corresponda, en el Diario Oficial<span class="src snca">SNCA XVI</span><span class="src pt">PT-05 12.4</span></div>
-    <div class="step"><b>10</b>Mantener los registros de licencias, DAP publicadas, expedientes y apelaciones. Los expedientes se conservan por cinco años desde el cese o la revocación<span class="src pt">PT-05 15</span></div>
-    <div class="step"><b>11</b>Resolver las apelaciones contra decisiones del MARN sobre otorgamiento, suspensión, renovación o revocación conforme al procedimiento administrativo común, y mantener un registro de apelaciones y quejas<span class="src pt">PT-05 13.1 y 13.3</span></div>
+    <div class="step"><b>6</b>Decidir sobre el mantenimiento, la suspensión o la anulación de la licencia con base en quejas o reclamos o en la solicitud de renovación<span class="src pt">PT-05 5.1</span></div>
+    <div class="step"><b>7</b>Registrar el cese del uso y actualizar el registro público<span class="src pt">PT-05 10.3</span></div>
+    <div class="step"><b>8</b>Revocar la licencia previo plazo de treinta días hábiles para descargos y con resolución motivada. Cuando el incumplimiento corresponda a una certificación de un tercero, la medida se limita a los efectos dentro del SNCA<span class="src snca">SNCA XVI</span><span class="src snca">SNCA Anexo II IV</span><span class="src pt">PT-05 11.2 y 11.5</span></div>
+    <div class="step"><b>9</b>Publicar la revocación en el sitio web oficial y, cuando corresponda, en el Diario Oficial<span class="src snca">SNCA XVI</span><span class="src pt">PT-05 11.4</span></div>
+    <div class="step"><b>10</b>Mantener los registros de licencias, DAP publicadas, expedientes y apelaciones. Los expedientes se conservan por cinco años desde el cese o la revocación<span class="src pt">PT-05 14</span></div>
+    <div class="step"><b>11</b>Resolver las apelaciones contra decisiones del MARN sobre otorgamiento, suspensión, renovación o revocación conforme al procedimiento administrativo común, y mantener un registro de apelaciones y quejas<span class="src pt">PT-05 12.1 y 12.3</span></div>
   </div>
 </div>
 
 <div class="lane ov">
   <div class="lane-label">Organismo de<br>Verificación</div>
   <div class="lane-body">
-    <div class="step"><b>12</b>Ejecutar las verificaciones de seguimiento durante la vigencia de la DAP<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 8.1</span></div>
-    <div class="step"><b>13</b>Decidir si mantiene, suspende o anula la aprobación de la DAP<span class="src pt">PT-05 8.2</span></div>
-    <div class="step"><b>14</b>Comunicar al MARN el resultado de cada verificación de seguimiento en diez días hábiles<span class="src pt">PT-05 8.3</span></div>
+    <div class="step"><b>12</b>Ejecutar las verificaciones de seguimiento durante la vigencia de la DAP<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 5.2</span></div>
+    <div class="step"><b>13</b>Decidir si mantiene, suspende o anula la aprobación de la DAP<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 5.2</span></div>
+    <div class="step"><b>14</b>Comunicar al MARN el resultado de cada verificación y toda decisión de mantener, suspender o anular la aprobación de la DAP<span class="src pt">PT-05 5.2</span></div>
     <div class="step"><b>15</b>Notificar al MARN cuando la certificación finalice, se reduzca, se suspenda o se retire<span class="src pt">PT-05 5.2</span></div>
-    <div class="step"><b>16</b>Evaluar los cambios notificados por el titular y determinar si exigen acciones correctivas, nueva evaluación o modificación del uso de la etiqueta<span class="src snca">SNCA Anexo II III</span><span class="src pt">PT-05 10.2</span></div>
-    <div class="step"><b>17</b>Tramitar apelaciones y quejas conforme a ISO/IEC 17029 9.9 y 9.10 e ISO 14065 9.9 y 9.10<span class="src iso">ISO/IEC 17029 9.9 y 9.10</span><span class="src iso">ISO 14065 9.9 y 9.10</span></div>
+    <div class="step"><b>16</b>Evaluar los cambios notificados por el titular y determinar si exigen acciones correctivas, nueva evaluación o modificación del uso de la etiqueta<span class="src snca">SNCA Anexo II III</span><span class="src pt">PT-05 9.2</span></div>
+    <div class="step"><b>17</b>Tramitar apelaciones y quejas conforme a ISO/IEC 17029 9.9 y 9.10 e ISO 14065 9.9 y 9.10<span class="src iso">ISO/IEC 17029 9.9 y 9.10</span><span class="src iso">ISO 14065 9.9 y 9.10</span><span class="src pt">PT-05 12.2</span></div>
   </div>
 </div>
 
 <div class="lane tit">
   <div class="lane-label">Titular<br>de la DAP</div>
   <div class="lane-body">
-    <div class="step"><b>18</b>Solicitar el derecho de uso una vez emitida la certificación de verificación<span class="src snca">SNCA Anexo II I</span><span class="src pt">PT-05 5.3 y 6.1</span></div>
-    <div class="step"><b>19</b>Usar el Sello solo en el producto o servicio verificado y en los materiales asociados, conforme al Manual de Uso; el Sello siempre debe estar acompañado del documento DAP o de un acceso fácil a este. Cesar el uso durante la suspensión de la licencia<span class="src man">Manual de Uso (Acuerdo N.º 339)</span><span class="src snca">SNCA Anexo II IV</span><span class="src iso">ISO 14025 8</span><span class="src pt">PT-05 5.3, 7.3 y 8.4</span></div>
+    <div class="step"><b>18</b>Solicitar el derecho de uso una vez emitida la certificación de verificación<span class="src snca">SNCA Anexo II I, paso 8</span><span class="src pt">PT-05 5.3 y 6.1</span></div>
+    <div class="step"><b>19</b>Usar el Sello solo en el producto o servicio verificado y en los materiales asociados, conforme al Manual de Uso; el Sello siempre debe estar acompañado del documento DAP o de un acceso fácil a este<span class="src otro">Manual de Uso (Acuerdo N.º 339)</span><span class="src snca">SNCA Anexo II IV</span><span class="src iso">ISO 14025 9.2.2</span><span class="src pt">PT-05 5.3 y 7.3</span></div>
     <div class="step"><b>20</b>Publicar la DAP verificada conforme a lo establecido por el MARN<span class="src pt">PT-05 7.4</span></div>
-    <div class="step"><b>21</b>Mantener el cumplimiento de los requisitos del programa durante toda la vigencia<span class="src pt">PT-05 10.4</span></div>
-    <div class="step"><b>22</b>Informar al OVV cualquier cambio en producto, proceso, sistema de gestión, composición, diseño o materiales<span class="src snca">SNCA Anexo II III</span><span class="src pt">PT-05 10.1</span></div>
-    <div class="step"><b>23</b>Comunicar la renovación al OVV tres meses antes del vencimiento<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 9.1</span></div>
-    <div class="step"><b>24</b>Presentar al MARN la solicitud de renovación con la nueva certificación y la DAP actualizada<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 9.3</span></div>
-    <div class="step"><b>25</b>Notificar por escrito al OVV y al MARN la decisión de no renovar<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 11.1</span></div>
-    <div class="step"><b>26</b>Cesar el uso del Sello, retirarlo de materiales impresos y digitales y notificar a clientes y socios<span class="src snca">SNCA Anexo II IV</span><span class="src pt">PT-05 11.2</span></div>
+    <div class="step"><b>21</b>Mantener el cumplimiento de los requisitos del programa durante toda la vigencia<span class="src pt">PT-05 9.4</span></div>
+    <div class="step"><b>22</b>Informar al OV cualquier cambio en producto, proceso, sistema de gestión, composición, diseño o materiales<span class="src snca">SNCA Anexo II III</span><span class="src pt">PT-05 9.1</span></div>
+    <div class="step"><b>23</b>Comunicar la renovación al OV tres meses antes del vencimiento<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 8.1</span></div>
+    <div class="step"><b>24</b>Presentar al MARN la solicitud de renovación con la nueva certificación y la DAP actualizada<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 8.3</span></div>
+    <div class="step"><b>25</b>Notificar por escrito al OV y al MARN la decisión de no renovar<span class="src snca">SNCA Anexo II II</span><span class="src pt">PT-05 10.1</span></div>
+    <div class="step"><b>26</b>Cesar el uso del Sello, retirarlo de materiales impresos y digitales y notificar a clientes y socios<span class="src snca">SNCA Anexo II IV</span><span class="src pt">PT-05 10.2</span></div>
   </div>
 </div>
 
@@ -104,27 +126,27 @@
 <div class="lane">
   <div class="lane-label" style="background:#243b53;color:#fff;padding:14px;font-size:13px;font-weight:600;display:flex;align-items:center">Decisiones</div>
   <div class="lane-body">
-    <div class="dec"><b>D1</b>¿La organización cuenta con certificación de verificación vigente de un OVV autorizado?<br><small>Sí → solicitud de licencia · No → no procede el otorgamiento</small></div>
+    <div class="dec"><b>D1</b>¿La organización cuenta con certificación de verificación vigente de un OV autorizado?<br><small>Sí → solicitud de licencia · No → no procede el otorgamiento</small></div>
     <div class="dec"><b>D2</b>¿La documentación está completa?<br><small>Sí → registro y otorgamiento · No → devolución sin trámite</small></div>
     <div class="dec"><b>D3</b>¿La verificación de seguimiento mantiene la aprobación de la DAP?<br><small>Sí → se mantiene la licencia · No → suspensión o anulación</small></div>
-    <div class="dec"><b>D4</b>¿El titular notificó cambios que afecten el alcance?<br><small>Sí → evaluación del OVV · No → se mantiene la licencia sin cambios</small></div>
+    <div class="dec"><b>D4</b>¿El titular notificó cambios que afecten el alcance?<br><small>Sí → evaluación del OV · No → se mantiene la licencia sin cambios</small></div>
     <div class="dec"><b>D5</b>¿Persiste el incumplimiento tras los descargos?<br><small>Sí → revocación y publicación · No → se archiva el expediente</small></div>
   </div>
 </div>
 
 <h2>Notas de régimen</h2>
 <div class="note">
-  <b>Confidencialidad</b>: la información obtenida en el trámite de la licencia y en las verificaciones de seguimiento se trata como confidencial, salvo la que el programa exige publicar y la que deba divulgarse por requerimiento de autoridad competente [PT-05 14; ISO/IEC 17029; ISO 14065].<br>
-  <b>Alcance de la revocación</b>: cuando el incumplimiento corresponda a una certificación, declaración o evaluación de conformidad emitida por un tercero, la medida del MARN se limita a los efectos que esa certificación produzca dentro del SNCA, sin perjuicio de las acciones del organismo emisor o de las autoridades competentes [PT-05 12.5].<br>
-  <b>Retención</b>: los expedientes se conservan por cinco años contados desde el cese o la revocación de la licencia [PT-05 15].
+  <b>Confidencialidad</b>: la información obtenida en el trámite de la licencia y en las verificaciones de seguimiento se trata como confidencial, salvo la que el programa exige publicar y la que deba divulgarse por requerimiento de autoridad competente [PT-05 13; ISO/IEC 17029; ISO 14065].<br>
+  <b>Alcance de la revocación</b>: cuando el incumplimiento corresponda a una certificación, declaración o evaluación de conformidad emitida por un tercero, la medida del MARN se limita a los efectos que esa certificación produzca dentro del SNCA, sin perjuicio de las acciones del organismo emisor o de las autoridades competentes [PT-05 11.5].<br>
+  <b>Retención</b>: los expedientes se conservan por cinco años contados desde el cese o la revocación de la licencia [PT-05 14].
 </div>
 
 <h2>Leyenda de fuentes</h2>
 <div class="legend">
-  <span><i class="dot" style="background:#2680c2"></i>SNCA VIII, IX, XVI y Anexo II I, II, III, IV</span>
-  <span><i class="dot" style="background:#2f9e44"></i>Manual de Uso del Sello Ambiental Salvadoreño (Acuerdo N.º 339, D.O. N.º 236, Tomo 445, 10/12/2024)</span>
+  <span><i class="dot" style="background:#2680c2"></i>SNCA VIII, IX, XVI y Anexo II I, II, III y IV</span>
   <span><i class="dot" style="background:#7048e8"></i>Procedimiento PT-05</span>
-  <span><i class="dot" style="background:#f08c00"></i>ISO 14025, ISO/IEC 17029 e ISO 14065</span>
+  <span><i class="dot" style="background:#d6336c"></i>ISO 14025, ISO/IEC 17029 e ISO 14065</span>
+  <span><i class="dot" style="background:#78909c"></i>Manual de Uso del Sello Ambiental Salvadoreño (Acuerdo N.º 339, D.O. N.º 236, Tomo 445, 10/12/2024)</span>
 </div>
 
 </body>
